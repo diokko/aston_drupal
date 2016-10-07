@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.as_book
+id: node.as_book.title
+field_name: title
+entity_type: node
+bundle: as_book
+label: 'Titre du livre'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

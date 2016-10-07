@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    layout:
+      libraries/global-styling/css/layout.css: {}
+    component:
+      libraries/global-styling/css/component.css: {}
+    theme :
+      libraries/global-styling/css/style.css: {}
+
+      js:
+        libraries/global-styling/js/main.js: {}
+
+
+      dependencies:
+          - core/drupal
+          - core/drupalSettings
+          - core/jquery
+          - core/jquery.once

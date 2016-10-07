@@ -1,0 +1,51 @@
+
+as_book.default_controller_bookListing:
+  path: 'books'
+  defaults:
+    _controller: '\Drupal\as_book\Controller\DefaultController::bookListing'
+    _title: 'Book listing'
+  requirements:
+    _permission: 'access content'
+
+as_book.default_controller_searchEngine:
+  path: 'books/search'
+  defaults:
+    _controller: '\Drupal\as_book\Controller\DefaultController::searchEngine'
+    _title: 'search listing'
+  requirements:
+    _permission: 'access content'
+
+as_book.book_reservation_form:
+  path: '/as_book/form/book_reservation'
+  defaults:
+    _form: '\Drupal\as_book\Form\BookReservationForm'
+    _title: 'BookReservationForm'
+  requirements:
+    _access: 'TRUE'
+
+
+as_book.default_form:
+  path: '/as_book/form/default'
+  defaults:
+    _form: '\Drupal\as_book\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _access: 'TRUE'
+
+
+as_book.search_book:
+  path: '/as_book/form/search_book'
+  defaults:
+    _form: '\Drupal\as_book\Form\SearchBook'
+    _title: 'SearchBook'
+  requirements:
+    _access: 'TRUE'
+    _permission: 'access content'
+
+as_book.search_engine_form:
+  path: '/as_book/form/search_engine'
+  defaults:
+    _form: '\Drupal\as_book\Form\SearchEngineForm'
+    _title: 'SearchEngineForm'
+  requirements:
+    _access: 'TRUE'

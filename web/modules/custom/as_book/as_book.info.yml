@@ -1,0 +1,14 @@
+name: Livre
+description: 'Provides Livre content type and related configuration. Provides a Book content type for the website.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
